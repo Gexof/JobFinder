@@ -1,5 +1,11 @@
+import MainHeader from "../components/MainHeader";
+
 function Jobs() {
-  return <div>Jobs</div>;
+  return (
+    <div>
+      <MainHeader />
+    </div>
+  );
 }
 
 export default Jobs;
