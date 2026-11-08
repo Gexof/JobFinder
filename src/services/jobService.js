@@ -1,5 +1,11 @@
-export const getJobs = async () => {
-  const res = await fetch("http://localhost:3000/jobs");
+export const getJobs = async (searchQuery = "", signal) => {
+  const query = searchQuery.trim();
+
+  const url = query
+    ? `http://localhost:3000/jobs?title:contains=${encodeURIComponent(query)}`
+    : "http://localhost:3000/jobs";
+
+  const res = await fetch(url, { signal });
 
   if (!res.ok) {
     throw new Error("Failed to fetch jobs");

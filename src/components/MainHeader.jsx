@@ -1,7 +1,7 @@
 import SearchBar from "./SearchBar";
 import HeroJobsPreview from "./HeroJobsPreview";
 
-function MainHeader() {
+function MainHeader({ searchQuery, setSearchQuery }) {
   return (
     <section
       aria-labelledby="hero-title"
@@ -20,7 +20,10 @@ function MainHeader() {
         </p>
 
         <form role="search" className="flex w-full items-center gap-3">
-          <SearchBar />
+          <SearchBar
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
 
           <button
             type="button"
