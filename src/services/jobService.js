@@ -1,4 +1,4 @@
-const getJobs = async () => {
+export const getJobs = async () => {
   const res = await fetch("http://localhost:3000/jobs");
 
   if (!res.ok) {
@@ -10,4 +10,17 @@ const getJobs = async () => {
   return data;
 };
 
-export default getJobs;
+export const getJobById = async (id) => {
+  const res = await fetch(`http://localhost:3000/jobs/${id}`);
+
+  if (res.status === 404) {
+    return null;
+  }
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch job");
+  }
+  const data = await res.json();
+
+  return data;
+};

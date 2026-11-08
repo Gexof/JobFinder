@@ -6,7 +6,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-function JobDetailsHeader() {
+function JobDetailsHeader({ job }) {
   return (
     <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#222631] p-6">
       {/* Background Decoration */}
@@ -17,33 +17,33 @@ function JobDetailsHeader() {
         <div className="flex items-start gap-4">
           {/* Company Logo */}
           <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-indigo-500/15 text-lg font-bold text-indigo-400">
-            MS
+            {job.company.logo}
           </div>
 
           <div>
             <h1 className="text-2xl font-bold text-gray-100 md:text-3xl">
-              Frontend Developer
+              {job.title}
             </h1>
 
             <p className="mt-2 text-base font-medium text-gray-300">
-              Microsoft
+              {job.company.name}
             </p>
 
             {/* Job Metadata */}
             <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-400">
               <span className="flex items-center gap-2">
                 <MapPin size={18} className="text-sky-400" />
-                Cairo, Egypt
+                {job.location}
               </span>
 
               <span className="flex items-center gap-2">
                 <BriefcaseBusiness size={18} className="text-sky-400" />
-                Full Time
+                {job.employmentType}
               </span>
 
               <span className="flex items-center gap-2">
                 <ChartNoAxesColumn size={18} className="text-sky-400" />
-                Mid Level
+                {job.experienceLevel}
               </span>
             </div>
           </div>
@@ -65,7 +65,7 @@ function JobDetailsHeader() {
 
       {/* Skills */}
       <div className="relative mt-7 flex flex-wrap gap-3 border-t border-white/10 pt-5">
-        {["React", "TypeScript", "Tailwind CSS", "Next.js"].map((skill) => (
+        {job.skills.map((skill) => (
           <span
             key={skill}
             className="rounded-full border border-white/10 bg-[#1B1E26] px-4 py-2 text-sm text-gray-300"

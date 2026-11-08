@@ -1,13 +1,6 @@
 import { CircleCheck } from "lucide-react";
 
-function JobResponsibilities() {
-  const responsibilities = [
-    "Develop and maintain responsive web applications",
-    "Collaborate with cross-functional teams",
-    "Optimize applications for maximum speed and scalability",
-    "Participate in code reviews and contribute to product improvements",
-  ];
-
+function JobResponsibilities({ job }) {
   return (
     <section className="rounded-2xl border border-white/10 bg-[#222631] p-6 text-white">
       {/* Section Header */}
@@ -21,7 +14,7 @@ function JobResponsibilities() {
 
       {/* Responsibilities List */}
       <ul className="space-y-3">
-        {responsibilities.map((responsibility) => (
+        {job.responsibilities.map((responsibility) => (
           <li
             key={responsibility}
             className="flex items-start gap-3 text-sm leading-relaxed text-gray-300"

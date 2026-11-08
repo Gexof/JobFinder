@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import JobList from "../components/JobList";
 import MainHeader from "../components/MainHeader";
-import getJobs from "../services/jobService";
+import { getJobs } from "../services/jobService";
 import JobSkeleton from "../components/common/JobSkeleton";
 import ErrorMessage from "../components/common/ErrorMessage";
 import EmptyState from "../components/common/EmptyState";

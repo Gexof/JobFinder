@@ -1,4 +1,5 @@
 import { MapPin, Bookmark, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router";
 
 function Job({ job }) {
   return (
@@ -47,10 +48,13 @@ function Job({ job }) {
       <footer className="flex items-center justify-between border-t border-white/10 pt-4">
         <span className="text-xs text-gray-500">{job.postedAt}</span>
 
-        <button className="flex items-center gap-2 rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-600">
+        <Link
+          to={`/jobs/${job.id}`}
+          className="flex items-center gap-2 rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-600"
+        >
           View Details
           <ArrowUpRight size={16} />
-        </button>
+        </Link>
       </footer>
     </article>
   );
