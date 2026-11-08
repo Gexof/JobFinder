@@ -1,0 +1,324 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "company": {
+        "name": "Microsoft",
+        "logo": "MS",
+        "website": "https://www.microsoft.com",
+        "description": "A global technology company building software and digital services.",
+        "employees": "10,000+",
+        "founded": 1975
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Frontend",
+      "postedAt": "2026-11-05",
+      "description": "We are looking for a talented Frontend Developer to build and maintain modern web applications.",
+      "responsibilities": [
+        "Develop responsive web applications",
+        "Collaborate with designers and backend developers",
+        "Optimize applications for performance",
+        "Participate in code reviews"
+      ],
+      "requirements": [
+        "Bachelor's degree in Computer Science or related field",
+        "2+ years of experience with React",
+        "Strong knowledge of TypeScript, HTML, and CSS",
+        "Experience with modern frontend tools"
+      ],
+      "skills": ["React", "TypeScript", "Tailwind CSS", "Next.js"]
+    },
+    {
+      "id": "2",
+      "title": "React Developer",
+      "company": {
+        "name": "Instabug",
+        "logo": "IN",
+        "website": "https://instabug.com",
+        "description": "A software company providing mobile application monitoring and debugging solutions.",
+        "employees": "200+",
+        "founded": 2012
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "category": "Frontend",
+      "postedAt": "2026-11-04",
+      "description": "Join our engineering team to develop reliable and scalable React applications.",
+      "responsibilities": [
+        "Build reusable React components",
+        "Integrate REST APIs",
+        "Fix bugs and improve existing features",
+        "Work with the product and design teams"
+      ],
+      "requirements": [
+        "Good knowledge of JavaScript",
+        "Understanding of React fundamentals",
+        "Knowledge of HTML and CSS",
+        "Familiarity with Git"
+      ],
+      "skills": ["React", "JavaScript", "REST API", "Git"]
+    },
+    {
+      "id": "3",
+      "title": "Backend Developer",
+      "company": {
+        "name": "VOIS",
+        "logo": "VO",
+        "website": "https://www.vois.com",
+        "description": "A technology and telecommunications services organization.",
+        "employees": "10,000+",
+        "founded": 2006
+      },
+      "location": "Alexandria, Egypt",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Backend",
+      "postedAt": "2026-11-03",
+      "description": "We are seeking a Backend Developer to build and maintain server-side applications.",
+      "responsibilities": [
+        "Develop RESTful APIs",
+        "Design and maintain databases",
+        "Write clean and maintainable code",
+        "Collaborate with frontend developers"
+      ],
+      "requirements": [
+        "Experience with C# and .NET",
+        "Knowledge of SQL databases",
+        "Understanding of API development",
+        "Problem-solving skills"
+      ],
+      "skills": ["C#", ".NET", "SQL Server", "REST API"]
+    },
+    {
+      "id": "4",
+      "title": "UI/UX Designer",
+      "company": {
+        "name": "Rabbit",
+        "logo": "RB",
+        "website": "https://rabbitmart.com",
+        "description": "A technology-driven quick commerce company.",
+        "employees": "500+",
+        "founded": 2021
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Design",
+      "postedAt": "2026-11-02",
+      "description": "We are looking for a creative UI/UX Designer to craft intuitive digital experiences.",
+      "responsibilities": [
+        "Create wireframes and prototypes",
+        "Design user interfaces",
+        "Conduct design reviews",
+        "Collaborate with developers"
+      ],
+      "requirements": [
+        "Experience with Figma",
+        "Understanding of UX principles",
+        "Strong visual design skills",
+        "A portfolio demonstrating design work"
+      ],
+      "skills": ["Figma", "UI Design", "UX Research", "Prototyping"]
+    },
+    {
+      "id": "5",
+      "title": "Full Stack Developer",
+      "company": {
+        "name": "Paymob",
+        "logo": "PM",
+        "website": "https://paymob.com",
+        "description": "A financial technology company providing digital payment solutions.",
+        "employees": "1,000+",
+        "founded": 2015
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "Full Stack",
+      "postedAt": "2026-11-01",
+      "description": "We are hiring a Full Stack Developer to build end-to-end web solutions.",
+      "responsibilities": [
+        "Develop frontend and backend features",
+        "Design database structures",
+        "Integrate third-party services",
+        "Maintain application performance"
+      ],
+      "requirements": [
+        "Strong JavaScript and TypeScript knowledge",
+        "Experience with React and Node.js",
+        "Knowledge of relational databases",
+        "Experience with REST APIs"
+      ],
+      "skills": ["React", "Node.js", "TypeScript", "PostgreSQL"]
+    },
+    {
+      "id": "6",
+      "title": "Junior Frontend Developer",
+      "company": {
+        "name": "Robusta",
+        "logo": "RO",
+        "website": "https://robustagroup.com",
+        "description": "A digital transformation and software development company.",
+        "employees": "500+",
+        "founded": 2012
+      },
+      "location": "Alexandria, Egypt",
+      "workplaceType": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "category": "Frontend",
+      "postedAt": "2026-10-30",
+      "description": "An opportunity for a junior developer to grow while building modern web interfaces.",
+      "responsibilities": [
+        "Implement responsive UI components",
+        "Consume APIs",
+        "Fix frontend bugs",
+        "Learn and follow coding standards"
+      ],
+      "requirements": [
+        "Basic knowledge of React",
+        "Good JavaScript fundamentals",
+        "Knowledge of CSS and Tailwind",
+        "Willingness to learn"
+      ],
+      "skills": ["React", "JavaScript", "Tailwind CSS", "HTML"]
+    },
+    {
+      "id": "7",
+      "title": "Node.js Developer",
+      "company": {
+        "name": "Breadfast",
+        "logo": "BF",
+        "website": "https://breadfast.com",
+        "description": "An Egyptian technology company operating in the quick commerce sector.",
+        "employees": "1,000+",
+        "founded": 2017
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Backend",
+      "postedAt": "2026-10-28",
+      "description": "Build scalable backend services and APIs for our growing platform.",
+      "responsibilities": [
+        "Develop backend services",
+        "Build and maintain APIs",
+        "Optimize database queries",
+        "Write automated tests"
+      ],
+      "requirements": [
+        "Experience with Node.js",
+        "Knowledge of Express",
+        "Understanding of databases",
+        "Experience with Git"
+      ],
+      "skills": ["Node.js", "Express", "MongoDB", "JavaScript"]
+    },
+    {
+      "id": "8",
+      "title": "Product Designer",
+      "company": {
+        "name": "MNT-Halan",
+        "logo": "MH",
+        "website": "https://mnt-halan.com",
+        "description": "A technology company offering financial and digital services.",
+        "employees": "1,000+",
+        "founded": 2017
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "Design",
+      "postedAt": "2026-10-25",
+      "description": "Create user-centered product experiences across our digital platforms.",
+      "responsibilities": [
+        "Lead product design initiatives",
+        "Create prototypes and user flows",
+        "Collaborate with product managers",
+        "Improve existing user experiences"
+      ],
+      "requirements": [
+        "Strong product design portfolio",
+        "Advanced Figma skills",
+        "Understanding of design systems",
+        "Experience working with product teams"
+      ],
+      "skills": ["Figma", "Product Design", "Design Systems", "UX"]
+    },
+    {
+      "id": "9",
+      "title": "Data Analyst",
+      "company": {
+        "name": "Raya",
+        "logo": "RA",
+        "website": "https://www.rayacorp.com",
+        "description": "An Egyptian business group operating across multiple industries.",
+        "employees": "10,000+",
+        "founded": 1999
+      },
+      "location": "Cairo, Egypt",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "category": "Data",
+      "postedAt": "2026-10-22",
+      "description": "Analyze business data and provide insights that support decision-making.",
+      "responsibilities": [
+        "Clean and analyze datasets",
+        "Create reports and dashboards",
+        "Identify trends and patterns",
+        "Present findings to stakeholders"
+      ],
+      "requirements": [
+        "Bachelor's degree in a related field",
+        "Good Excel skills",
+        "Basic SQL knowledge",
+        "Analytical thinking"
+      ],
+      "skills": ["SQL", "Excel", "Power BI", "Data Analysis"]
+    },
+    {
+      "id": "10",
+      "title": "DevOps Engineer",
+      "company": {
+        "name": "InstaDeep",
+        "logo": "ID",
+        "website": "https://www.instadeep.com",
+        "description": "An AI company developing advanced machine learning solutions.",
+        "employees": "500+",
+        "founded": 2014
+      },
+      "location": "Remote",
+      "workplaceType": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "DevOps",
+      "postedAt": "2026-10-20",
+      "description": "Help build and maintain reliable infrastructure and deployment pipelines.",
+      "responsibilities": [
+        "Maintain CI/CD pipelines",
+        "Manage cloud infrastructure",
+        "Monitor application performance",
+        "Improve deployment workflows"
+      ],
+      "requirements": [
+        "Experience with Linux",
+        "Knowledge of Docker",
+        "Understanding of cloud platforms",
+        "Experience with CI/CD tools"
+      ],
+      "skills": ["Docker", "AWS", "Linux", "CI/CD"]
+    }
+  ]
+}
