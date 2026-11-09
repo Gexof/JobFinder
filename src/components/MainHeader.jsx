@@ -25,12 +25,12 @@ function MainHeader({ searchQuery, setSearchQuery }) {
             setSearchQuery={setSearchQuery}
           />
 
-          <button
+          {/* <button
             type="button"
             className="shrink-0 rounded-xl bg-indigo-500 px-6 py-3 font-medium text-white transition-colors hover:bg-indigo-600"
           >
             Search
-          </button>
+          </button> */}
         </form>
       </div>
 

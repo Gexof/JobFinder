@@ -5,6 +5,7 @@ import { getJobs } from "../services/jobService";
 import JobSkeleton from "../components/common/JobSkeleton";
 import ErrorMessage from "../components/common/ErrorMessage";
 import EmptyState from "../components/common/EmptyState";
+import JobFilters from "../components/JobFilters";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -12,6 +13,12 @@ function Jobs() {
   const [error, setError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [filters, setFilters] = useState({
+    workplace: [],
+    location: [],
+    careerLevel: [],
+    jobType: [],
+  });
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -52,19 +59,29 @@ function Jobs() {
     <div>
       <MainHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
-      {isLoading ? (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 6 }).map((_, index) => (
-            <JobSkeleton key={index} />
-          ))}
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
+        {/* Filters Sidebar */}
+        <div className="w-full lg:w-64 lg:shrink-0">
+          <JobFilters filters={filters} setFilters={setFilters} />
         </div>
-      ) : error ? (
-        <ErrorMessage message={error} />
-      ) : jobs.length === 0 ? (
-        <EmptyState />
-      ) : (
-        <JobList jobs={jobs} />
-      )}
+
+        {/* Jobs Section */}
+        <div className="min-w-0 flex-1">
+          {isLoading ? (
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <JobSkeleton key={index} />
+              ))}
+            </div>
+          ) : error ? (
+            <ErrorMessage message={error} />
+          ) : jobs.length === 0 ? (
+            <EmptyState />
+          ) : (
+            <JobList jobs={jobs} />
+          )}
+        </div>
+      </div>
     </div>
   );
 }

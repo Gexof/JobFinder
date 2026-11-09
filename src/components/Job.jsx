@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function Job({ job }) {
   return (
-    <article className="rounded-xl border border-white/10 bg-[#222631] p-5 transition-all duration-200 hover:border-indigo-500/40 hover:-translate-y-1">
+    <article className="flex h-full flex-col rounded-xl border border-white/10 bg-[#222631] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-indigo-500/40">
       {/* Header */}
       <header className="mb-5 flex items-start justify-between gap-4">
         <div className="flex items-start gap-3">
@@ -45,7 +45,7 @@ function Job({ job }) {
       </p>
 
       {/* Footer */}
-      <footer className="flex items-center justify-between border-t border-white/10 pt-4">
+      <footer className="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
         <span className="text-xs text-gray-500">{job.postedAt}</span>
 
         <Link
