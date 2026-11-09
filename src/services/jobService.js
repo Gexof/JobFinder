@@ -1,19 +1,34 @@
-export const getJobs = async (searchQuery = "", signal) => {
+export const getJobs = async (searchQuery = "", filters, signal) => {
   const query = searchQuery.trim();
+  const params = new URLSearchParams();
 
-  const url = query
-    ? `http://localhost:3000/jobs?title:contains=${encodeURIComponent(query)}`
-    : "http://localhost:3000/jobs";
-
-  const res = await fetch(url, { signal });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch jobs");
+  if (query) {
+    params.append("title:contains", query);
   }
 
-  const data = await res.json();
+  if (filters.workplace.length > 0) {
+    params.append("workplaceType:in", filters.workplace.join(","));
+  }
 
-  return data;
+  if (filters.location.length > 0) {
+    params.append("city:in", filters.location.join(","));
+  }
+
+  if (filters.careerLevel.length > 0) {
+    params.append("experienceLevel:in", filters.careerLevel.join(","));
+  }
+
+  if (filters.jobType.length > 0) {
+    params.append("employmentType:in", filters.jobType.join(","));
+  }
+
+  const res = await fetch(`http://localhost:3000/jobs?${params.toString()}`, {
+    signal,
+  });
+
+  if (!res.ok) throw new Error("Failed to fetch jobs");
+
+  return res.json();
 };
 
 export const getJobById = async (id) => {

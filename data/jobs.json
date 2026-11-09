@@ -12,6 +12,7 @@
         "founded": 1975
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "Hybrid",
       "employmentType": "Full-time",
       "experienceLevel": "Mid Level",
@@ -44,6 +45,7 @@
         "founded": 2012
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "On-site",
       "employmentType": "Full-time",
       "experienceLevel": "Junior",
@@ -76,6 +78,7 @@
         "founded": 2006
       },
       "location": "Alexandria, Egypt",
+      "city": "Alexandria",
       "workplaceType": "Hybrid",
       "employmentType": "Full-time",
       "experienceLevel": "Mid Level",
@@ -108,6 +111,7 @@
         "founded": 2021
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "On-site",
       "employmentType": "Full-time",
       "experienceLevel": "Mid Level",
@@ -140,6 +144,7 @@
         "founded": 2015
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "Hybrid",
       "employmentType": "Full-time",
       "experienceLevel": "Senior",
@@ -172,6 +177,7 @@
         "founded": 2012
       },
       "location": "Alexandria, Egypt",
+      "city": "Alexandria",
       "workplaceType": "Remote",
       "employmentType": "Full-time",
       "experienceLevel": "Junior",
@@ -204,6 +210,7 @@
         "founded": 2017
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "Hybrid",
       "employmentType": "Full-time",
       "experienceLevel": "Mid Level",
@@ -236,6 +243,7 @@
         "founded": 2017
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "On-site",
       "employmentType": "Full-time",
       "experienceLevel": "Senior",
@@ -268,6 +276,7 @@
         "founded": 1999
       },
       "location": "Cairo, Egypt",
+      "city": "Cairo",
       "workplaceType": "Hybrid",
       "employmentType": "Full-time",
       "experienceLevel": "Junior",
@@ -300,6 +309,7 @@
         "founded": 2014
       },
       "location": "Remote",
+      "city": null,
       "workplaceType": "Remote",
       "employmentType": "Full-time",
       "experienceLevel": "Senior",
@@ -319,6 +329,600 @@
         "Experience with CI/CD tools"
       ],
       "skills": ["Docker", "AWS", "Linux", "CI/CD"]
+    },
+    {
+      "id": "11",
+      "title": "Flutter Developer",
+      "company": {
+        "name": "Nile Soft",
+        "logo": "NS",
+        "website": "https://nilesoft.example",
+        "description": "A software house building mobile and web products.",
+        "employees": "200+",
+        "founded": 2016
+      },
+      "location": "Giza, Egypt",
+      "city": "Giza",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Mobile",
+      "postedAt": "2026-11-08",
+      "description": "Build cross-platform mobile apps used by thousands of customers.",
+      "responsibilities": [
+        "Develop Flutter applications",
+        "Integrate REST APIs",
+        "Write unit and widget tests",
+        "Publish apps to the stores"
+      ],
+      "requirements": [
+        "2+ years of Flutter experience",
+        "Knowledge of Dart",
+        "Experience with state management",
+        "Familiarity with Git"
+      ],
+      "skills": ["Flutter", "Dart", "REST API", "Firebase"]
+    },
+    {
+      "id": "12",
+      "title": "QA Engineer",
+      "company": {
+        "name": "Delta Labs",
+        "logo": "DL",
+        "website": "https://deltalabs.example",
+        "description": "A quality engineering and testing services company.",
+        "employees": "100+",
+        "founded": 2018
+      },
+      "location": "Mansoura, Egypt",
+      "city": "Mansoura",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "category": "QA",
+      "postedAt": "2026-11-08",
+      "description": "Join our QA team to make sure our products ship with high quality.",
+      "responsibilities": [
+        "Write and run test cases",
+        "Report and track bugs",
+        "Perform regression testing",
+        "Help automate tests"
+      ],
+      "requirements": [
+        "Understanding of testing fundamentals",
+        "Basic knowledge of SQL",
+        "Attention to detail",
+        "Good communication skills"
+      ],
+      "skills": ["Manual Testing", "Selenium", "Postman", "Jira"]
+    },
+    {
+      "id": "13",
+      "title": "Data Scientist",
+      "company": {
+        "name": "Pyramid Analytics",
+        "logo": "PA",
+        "website": "https://pyramidanalytics.example",
+        "description": "A data and analytics consultancy.",
+        "employees": "500+",
+        "founded": 2014
+      },
+      "location": "Cairo, Egypt",
+      "city": "Cairo",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "Data",
+      "postedAt": "2026-11-07",
+      "description": "Turn complex business data into predictive models and insights.",
+      "responsibilities": [
+        "Build predictive models",
+        "Design experiments",
+        "Present insights to stakeholders",
+        "Mentor junior analysts"
+      ],
+      "requirements": [
+        "5+ years of experience in data science",
+        "Strong Python and statistics",
+        "Experience with ML frameworks",
+        "Strong communication skills"
+      ],
+      "skills": ["Python", "Pandas", "scikit-learn", "SQL"]
+    },
+    {
+      "id": "14",
+      "title": "Vue.js Developer",
+      "company": {
+        "name": "Mediterranean Systems",
+        "logo": "MS",
+        "website": "https://medsystems.example",
+        "description": "A web development and digital agency.",
+        "employees": "50+",
+        "founded": 2019
+      },
+      "location": "Alexandria, Egypt",
+      "city": "Alexandria",
+      "workplaceType": "Remote",
+      "employmentType": "Contract",
+      "experienceLevel": "Mid Level",
+      "category": "Frontend",
+      "postedAt": "2026-11-07",
+      "description": "A 6-month contract to build a customer portal with Vue.",
+      "responsibilities": [
+        "Build reusable Vue components",
+        "Integrate APIs",
+        "Write component tests",
+        "Review pull requests"
+      ],
+      "requirements": [
+        "2+ years of Vue experience",
+        "Strong JavaScript knowledge",
+        "Experience with Pinia or Vuex",
+        "Good CSS skills"
+      ],
+      "skills": ["Vue.js", "JavaScript", "Pinia", "CSS"]
+    },
+    {
+      "id": "15",
+      "title": "Cybersecurity Analyst",
+      "company": {
+        "name": "Sinai Secure",
+        "logo": "SS",
+        "website": "https://sinaisecure.example",
+        "description": "A cybersecurity services provider.",
+        "employees": "200+",
+        "founded": 2017
+      },
+      "location": "Cairo, Egypt",
+      "city": "Cairo",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Security",
+      "postedAt": "2026-11-06",
+      "description": "Monitor, detect, and respond to security threats for our clients.",
+      "responsibilities": [
+        "Monitor security alerts",
+        "Investigate incidents",
+        "Run vulnerability assessments",
+        "Write security reports"
+      ],
+      "requirements": [
+        "Experience in a SOC environment",
+        "Knowledge of networking",
+        "Understanding of common attack techniques",
+        "Security certifications are a plus"
+      ],
+      "skills": ["SIEM", "Networking", "Incident Response", "Linux"]
+    },
+    {
+      "id": "16",
+      "title": "Product Manager",
+      "company": {
+        "name": "Nile Soft",
+        "logo": "NS",
+        "website": "https://nilesoft.example",
+        "description": "A software house building mobile and web products.",
+        "employees": "200+",
+        "founded": 2016
+      },
+      "location": "Cairo, Egypt",
+      "city": "Cairo",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "Product",
+      "postedAt": "2026-11-06",
+      "description": "Own the roadmap of one of our core mobile products.",
+      "responsibilities": [
+        "Define product roadmap",
+        "Write requirements",
+        "Work with design and engineering",
+        "Track product metrics"
+      ],
+      "requirements": [
+        "4+ years in product management",
+        "Experience with agile teams",
+        "Data-driven mindset",
+        "Excellent communication"
+      ],
+      "skills": ["Roadmapping", "Agile", "Analytics", "Stakeholder Management"]
+    },
+    {
+      "id": "17",
+      "title": "Digital Marketing Intern",
+      "company": {
+        "name": "Alex Media",
+        "logo": "AM",
+        "website": "https://alexmedia.example",
+        "description": "A digital marketing and media company.",
+        "employees": "100+",
+        "founded": 2015
+      },
+      "location": "Alexandria, Egypt",
+      "city": "Alexandria",
+      "workplaceType": "On-site",
+      "employmentType": "Internship",
+      "experienceLevel": "Junior",
+      "category": "Marketing",
+      "postedAt": "2026-11-05",
+      "description": "A 3-month internship to learn digital marketing hands-on.",
+      "responsibilities": [
+        "Help manage social media accounts",
+        "Prepare content calendars",
+        "Track campaign results",
+        "Support the marketing team"
+      ],
+      "requirements": [
+        "Student or fresh graduate",
+        "Good writing skills",
+        "Interest in digital marketing",
+        "Basic knowledge of social platforms"
+      ],
+      "skills": ["Social Media", "Content Writing", "Canva", "Analytics"]
+    },
+    {
+      "id": "18",
+      "title": "Technical Writer",
+      "company": {
+        "name": "Docuwise",
+        "logo": "DW",
+        "website": "https://docuwise.example",
+        "description": "A developer-tools company focused on documentation.",
+        "employees": "50+",
+        "founded": 2020
+      },
+      "location": "Remote",
+      "city": null,
+      "workplaceType": "Remote",
+      "employmentType": "Part-time",
+      "experienceLevel": "Mid Level",
+      "category": "Content",
+      "postedAt": "2026-11-05",
+      "description": "Write clear documentation and guides for developers.",
+      "responsibilities": [
+        "Write API documentation",
+        "Create tutorials",
+        "Review technical content",
+        "Keep docs up to date"
+      ],
+      "requirements": [
+        "Excellent English writing",
+        "Understanding of APIs",
+        "Experience with Markdown",
+        "Ability to learn quickly"
+      ],
+      "skills": ["Technical Writing", "Markdown", "API Docs", "Git"]
+    },
+    {
+      "id": "19",
+      "title": "Cloud Engineer",
+      "company": {
+        "name": "Gulf Cloud",
+        "logo": "GC",
+        "website": "https://gulfcloud.example",
+        "description": "A cloud infrastructure and consulting company.",
+        "employees": "1,000+",
+        "founded": 2011
+      },
+      "location": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "DevOps",
+      "postedAt": "2026-11-04",
+      "description": "Design and operate cloud infrastructure for enterprise clients.",
+      "responsibilities": [
+        "Design cloud architectures",
+        "Automate infrastructure",
+        "Improve reliability and cost",
+        "Support client migrations"
+      ],
+      "requirements": [
+        "5+ years in cloud engineering",
+        "Experience with AWS or Azure",
+        "Knowledge of Terraform",
+        "Strong Linux skills"
+      ],
+      "skills": ["AWS", "Terraform", "Kubernetes", "Linux"]
+    },
+    {
+      "id": "20",
+      "title": "Java Backend Lead",
+      "company": {
+        "name": "Riyadh Digital",
+        "logo": "RD",
+        "website": "https://riyadhdigital.example",
+        "description": "A digital transformation company in the Gulf region.",
+        "employees": "1,000+",
+        "founded": 2013
+      },
+      "location": "Riyadh, Saudi Arabia",
+      "city": "Riyadh",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Lead",
+      "category": "Backend",
+      "postedAt": "2026-11-04",
+      "description": "Lead a team building large-scale backend systems.",
+      "responsibilities": [
+        "Lead backend engineers",
+        "Design system architecture",
+        "Review code and designs",
+        "Collaborate with product teams"
+      ],
+      "requirements": [
+        "7+ years of Java experience",
+        "Experience leading a team",
+        "Knowledge of microservices",
+        "Strong database skills"
+      ],
+      "skills": ["Java", "Spring Boot", "Microservices", "PostgreSQL"]
+    },
+    {
+      "id": "21",
+      "title": "UI Designer",
+      "company": {
+        "name": "Pixel Hub",
+        "logo": "PH",
+        "website": "https://pixelhub.example",
+        "description": "A creative studio for digital product design.",
+        "employees": "50+",
+        "founded": 2021
+      },
+      "location": "Remote",
+      "city": null,
+      "workplaceType": "Remote",
+      "employmentType": "Part-time",
+      "experienceLevel": "Junior",
+      "category": "Design",
+      "postedAt": "2026-11-03",
+      "description": "Design clean interfaces for web and mobile projects.",
+      "responsibilities": [
+        "Design screens in Figma",
+        "Create style guides",
+        "Prepare assets for developers",
+        "Iterate on feedback"
+      ],
+      "requirements": [
+        "Basic Figma skills",
+        "A portfolio of UI work",
+        "Eye for visual detail",
+        "Willingness to learn"
+      ],
+      "skills": ["Figma", "UI Design", "Typography", "Prototyping"]
+    },
+    {
+      "id": "22",
+      "title": "Machine Learning Engineer",
+      "company": {
+        "name": "Neural Nile",
+        "logo": "NN",
+        "website": "https://neuralnile.example",
+        "description": "An AI startup building machine learning products.",
+        "employees": "100+",
+        "founded": 2020
+      },
+      "location": "Cairo, Egypt",
+      "city": "Cairo",
+      "workplaceType": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "category": "AI",
+      "postedAt": "2026-11-03",
+      "description": "Build and deploy machine learning models to production.",
+      "responsibilities": [
+        "Train and evaluate models",
+        "Deploy models as services",
+        "Monitor model performance",
+        "Work with data engineers"
+      ],
+      "requirements": [
+        "4+ years in machine learning",
+        "Strong Python skills",
+        "Experience with PyTorch or TensorFlow",
+        "Knowledge of MLOps"
+      ],
+      "skills": ["Python", "PyTorch", "MLOps", "Docker"]
+    },
+    {
+      "id": "23",
+      "title": "Customer Success Specialist",
+      "company": {
+        "name": "Delta Support",
+        "logo": "DS",
+        "website": "https://deltasupport.example",
+        "description": "A customer experience and support outsourcing company.",
+        "employees": "1,000+",
+        "founded": 2010
+      },
+      "location": "Tanta, Egypt",
+      "city": "Tanta",
+      "workplaceType": "On-site",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "category": "Support",
+      "postedAt": "2026-11-02",
+      "description": "Help customers get the most out of our products.",
+      "responsibilities": [
+        "Respond to customer requests",
+        "Resolve issues quickly",
+        "Document common problems",
+        "Share feedback with product teams"
+      ],
+      "requirements": [
+        "Fluent English",
+        "Good communication skills",
+        "Customer-first mindset",
+        "Basic technical knowledge"
+      ],
+      "skills": ["Communication", "Zendesk", "Problem Solving", "English"]
+    },
+    {
+      "id": "24",
+      "title": "Android Developer",
+      "company": {
+        "name": "Nile Soft",
+        "logo": "NS",
+        "website": "https://nilesoft.example",
+        "description": "A software house building mobile and web products.",
+        "employees": "200+",
+        "founded": 2016
+      },
+      "location": "Alexandria, Egypt",
+      "city": "Alexandria",
+      "workplaceType": "Hybrid",
+      "employmentType": "Contract",
+      "experienceLevel": "Mid Level",
+      "category": "Mobile",
+      "postedAt": "2026-11-02",
+      "description": "A 4-month contract to build new features for an Android app.",
+      "responsibilities": [
+        "Build Android features",
+        "Fix bugs",
+        "Write tests",
+        "Work with the design team"
+      ],
+      "requirements": [
+        "2+ years of Kotlin experience",
+        "Knowledge of Jetpack Compose",
+        "Experience with REST APIs",
+        "Familiarity with Git"
+      ],
+      "skills": ["Kotlin", "Jetpack Compose", "REST API", "Git"]
+    },
+    {
+      "id": "25",
+      "title": "Frontend Intern",
+      "company": {
+        "name": "Pixel Hub",
+        "logo": "PH",
+        "website": "https://pixelhub.example",
+        "description": "A creative studio for digital product design.",
+        "employees": "50+",
+        "founded": 2021
+      },
+      "location": "Cairo, Egypt",
+      "city": "Cairo",
+      "workplaceType": "On-site",
+      "employmentType": "Internship",
+      "experienceLevel": "Junior",
+      "category": "Frontend",
+      "postedAt": "2026-11-01",
+      "description": "Learn React while working on real projects with mentors.",
+      "responsibilities": [
+        "Build UI components",
+        "Fix small bugs",
+        "Learn code review practices",
+        "Join team meetings"
+      ],
+      "requirements": [
+        "Basic HTML, CSS, and JavaScript",
+        "Interest in React",
+        "Eagerness to learn",
+        "Good teamwork"
+      ],
+      "skills": ["HTML", "CSS", "JavaScript", "React"]
+    },
+    {
+      "id": "26",
+      "title": "Project Manager",
+      "company": {
+        "name": "Riyadh Digital",
+        "logo": "RD",
+        "website": "https://riyadhdigital.example",
+        "description": "A digital transformation company in the Gulf region.",
+        "employees": "1,000+",
+        "founded": 2013
+      },
+      "location": "Giza, Egypt",
+      "city": "Giza",
+      "workplaceType": "Hybrid",
+      "employmentType": "Full-time",
+      "experienceLevel": "Lead",
+      "category": "Management",
+      "postedAt": "2026-10-31",
+      "description": "Manage delivery of multiple software projects.",
+      "responsibilities": [
+        "Plan project timelines",
+        "Manage risks and budgets",
+        "Coordinate between teams",
+        "Report progress to clients"
+      ],
+      "requirements": [
+        "6+ years in project management",
+        "PMP or similar is a plus",
+        "Experience with agile delivery",
+        "Strong leadership skills"
+      ],
+      "skills": ["Project Management", "Agile", "Scrum", "Risk Management"]
+    },
+    {
+      "id": "27",
+      "title": "Business Analyst",
+      "company": {
+        "name": "Gulf Cloud",
+        "logo": "GC",
+        "website": "https://gulfcloud.example",
+        "description": "A cloud infrastructure and consulting company.",
+        "employees": "1,000+",
+        "founded": 2011
+      },
+      "location": "Dubai, United Arab Emirates",
+      "city": "Dubai",
+      "workplaceType": "Hybrid",
+      "employmentType": "Contract",
+      "experienceLevel": "Mid Level",
+      "category": "Business",
+      "postedAt": "2026-10-29",
+      "description": "Work with clients to define requirements for cloud projects.",
+      "responsibilities": [
+        "Gather client requirements",
+        "Write user stories",
+        "Create process diagrams",
+        "Support UAT"
+      ],
+      "requirements": [
+        "3+ years as a business analyst",
+        "Strong documentation skills",
+        "Experience with Jira",
+        "Good communication skills"
+      ],
+      "skills": ["Requirements", "Jira", "Process Modeling", "SQL"]
+    },
+    {
+      "id": "28",
+      "title": "Full Stack Developer",
+      "company": {
+        "name": "Mediterranean Systems",
+        "logo": "MS",
+        "website": "https://medsystems.example",
+        "description": "A web development and digital agency.",
+        "employees": "50+",
+        "founded": 2019
+      },
+      "location": "Remote",
+      "city": null,
+      "workplaceType": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid Level",
+      "category": "Full Stack",
+      "postedAt": "2026-10-27",
+      "description": "Build web applications end to end in a fully remote team.",
+      "responsibilities": [
+        "Build frontend and backend features",
+        "Design APIs",
+        "Write tests",
+        "Deploy to the cloud"
+      ],
+      "requirements": [
+        "3+ years of full stack experience",
+        "Experience with React and Node.js",
+        "Knowledge of SQL or NoSQL databases",
+        "Good English"
+      ],
+      "skills": ["React", "Node.js", "MongoDB", "TypeScript"]
     }
   ]
 }

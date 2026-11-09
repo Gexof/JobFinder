@@ -9,6 +9,7 @@ import JobFilters from "../components/JobFilters";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
+  const [allJobs, setAllJobs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,6 +21,7 @@ function Jobs() {
     jobType: [],
   });
 
+  // Debouncer
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchQuery);
@@ -28,6 +30,7 @@ function Jobs() {
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
+  // Fetch Jobs
   useEffect(() => {
     const controller = new AbortController();
 
@@ -36,7 +39,7 @@ function Jobs() {
         setIsLoading(true);
         setError("");
 
-        const data = await getJobs(debouncedSearch, controller.signal);
+        const data = await getJobs(debouncedSearch, filters, controller.signal);
 
         setJobs(data);
       } catch (err) {
@@ -53,7 +56,52 @@ function Jobs() {
     fetchJobs();
 
     return () => controller.abort();
-  }, [debouncedSearch]);
+  }, [debouncedSearch, filters]);
+
+  // Fetch All Jobs
+  useEffect(() => {
+    const fetchAllJobs = async () => {
+      try {
+        const data = await getJobs("", {
+          workplace: [],
+          location: [],
+          careerLevel: [],
+          jobType: [],
+        });
+
+        setAllJobs(data);
+
+        console.log(data);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+
+    fetchAllJobs();
+  }, []);
+
+  const workplaceOptions = [
+    ...new Set(allJobs.map((job) => job.workplaceType)),
+  ];
+
+  const locationOptions = [
+    ...new Set(allJobs.map((job) => job.city).filter((city) => city !== null)),
+  ];
+
+  const careerLevelOptions = [
+    ...new Set(allJobs.map((job) => job.experienceLevel)),
+  ];
+
+  const jobTypeOptions = [...new Set(allJobs.map((job) => job.employmentType))];
+
+  console.log(locationOptions);
+
+  const filterOptions = {
+    workplace: workplaceOptions,
+    location: locationOptions,
+    careerLevel: careerLevelOptions,
+    jobType: jobTypeOptions,
+  };
 
   return (
     <div>
@@ -62,7 +110,11 @@ function Jobs() {
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start">
         {/* Filters Sidebar */}
         <div className="w-full lg:w-64 lg:shrink-0">
-          <JobFilters filters={filters} setFilters={setFilters} />
+          <JobFilters
+            filters={filters}
+            setFilters={setFilters}
+            filterOptions={filterOptions}
+          />
         </div>
 
         {/* Jobs Section */}

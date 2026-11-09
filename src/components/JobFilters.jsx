@@ -1,7 +1,7 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
-function JobFilters({ filters, setFilters }) {
+function JobFilters({ filters, setFilters, filterOptions }) {
   const [openSections, setOpenSections] = useState({
     workplace: true,
     location: false,
@@ -9,26 +9,30 @@ function JobFilters({ filters, setFilters }) {
     jobType: false,
   });
 
-  const filterSections = [
+  const filterConfig = [
     {
       id: "workplace",
       title: "Workplace",
-      options: ["On-site", "Hybrid", "Remote"],
+      field: "workplaceType",
+      options: filterOptions.workplace,
     },
     {
       id: "location",
       title: "Location",
-      options: ["Cairo", "Alexandria", "Giza"],
+      field: "location",
+      options: filterOptions.location,
     },
     {
       id: "careerLevel",
       title: "Career Level",
-      options: ["Junior", "Mid Level", "Senior"],
+      field: "experienceLevel",
+      options: filterOptions.careerLevel,
     },
     {
       id: "jobType",
       title: "Job Type",
-      options: ["Full-time", "Part-time", "Contract", "Internship"],
+      field: "employmentType",
+      options: filterOptions.jobType,
     },
   ];
 
@@ -71,7 +75,7 @@ function JobFilters({ filters, setFilters }) {
       </div>
 
       <div className="space-y-5">
-        {filterSections.map((section) => (
+        {filterConfig.map((section) => (
           <div key={section.id}>
             <button
               onClick={() => toggleSection(section.id)}
