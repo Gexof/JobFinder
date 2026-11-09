@@ -6,6 +6,7 @@ import JobSkeleton from "../components/common/JobSkeleton";
 import ErrorMessage from "../components/common/ErrorMessage";
 import EmptyState from "../components/common/EmptyState";
 import JobFilters from "../components/JobFilters";
+import { Grid2X2, List } from "lucide-react";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -20,6 +21,7 @@ function Jobs() {
     careerLevel: [],
     jobType: [],
   });
+  const [viewMode, setViewMode] = useState("grid");
 
   // Debouncer
   useEffect(() => {
@@ -70,8 +72,6 @@ function Jobs() {
         });
 
         setAllJobs(data);
-
-        console.log(data);
       } catch (err) {
         console.log(err.message);
       }
@@ -93,8 +93,6 @@ function Jobs() {
   ];
 
   const jobTypeOptions = [...new Set(allJobs.map((job) => job.employmentType))];
-
-  console.log(locationOptions);
 
   const filterOptions = {
     workplace: workplaceOptions,
@@ -119,6 +117,45 @@ function Jobs() {
 
         {/* Jobs Section */}
         <div className="min-w-0 flex-1">
+          <div className="mb-5 flex items-center justify-between gap-4">
+            <p className="text-sm text-gray-400">
+              Showing
+              <span className="font-semibold text-gray-100">
+                {" "}
+                {jobs.length}{" "}
+              </span>
+              jobs
+            </p>
+
+            <div className="flex shrink-0 items-center gap-1 rounded-lg border border-white/10 bg-[#1B1E26] p-1">
+              <button
+                onClick={() => setViewMode("grid")}
+                className={`rounded-md p-2 transition-colors ${
+                  viewMode === "grid"
+                    ? "bg-indigo-500 text-white"
+                    : "text-gray-400 hover:text-white"
+                }`}
+                aria-label="Grid view"
+                aria-pressed={viewMode === "grid"}
+              >
+                <Grid2X2 size={18} />
+              </button>
+
+              <button
+                onClick={() => setViewMode("list")}
+                className={`rounded-md p-2 transition-colors ${
+                  viewMode === "list"
+                    ? "bg-indigo-500 text-white"
+                    : "text-gray-400 hover:text-white"
+                }`}
+                aria-label="List view"
+                aria-pressed={viewMode === "list"}
+              >
+                <List size={18} />
+              </button>
+            </div>
+          </div>
+
           {isLoading ? (
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {Array.from({ length: 6 }).map((_, index) => (
@@ -130,7 +167,7 @@ function Jobs() {
           ) : jobs.length === 0 ? (
             <EmptyState />
           ) : (
-            <JobList jobs={jobs} />
+            <JobList jobs={jobs} viewMode={viewMode} />
           )}
         </div>
       </div>
